@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Shop</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+<link rel="shortcut icon" href="tez.png" type="image/png" style="border-radius:10px;">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <header class="header1">
+<div id=header><p>World's Fastest Growing Site for Online Shopping</p></div>
+    </header>
+    <script type="text/javascript">
+
+    var a = 2;
+    var b = 58;
+    var c = 10;
+    setInterval(abc,1000);
+    function abc()
+    {
+      if(c==0)
+      {
+		b--;
+        c=59;
+      }
+      if(b==0)
+      {
+	  a--;
+        b=59;
+      }
+      document.getElementById('rs').innerHTML= (a+":"+b+":"+c);
+      c--;
+    }
+
+
+      function openSlideMenu(){
+        document.getElementById('side-menu').style.width='250px';
+      }
+      function closeSlideMenu(){
+        document.getElementById('side-menu').style.width='0px';
+        document.getElementById('main').style.marginLeft='0px';
+      }
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+    </script>
+    <header id=mainheader>
+      <div id=1st class=logo>
+        <span id=ist ><a href="http://www.facebook.com">Shopper's </a></span>&nbsp;<span id=iist ><a href="http://www.facebook.com">street</a></span>
+      </div>
+      <!--search area-->
+      <div id=search>
+        <form action="" method="post">
+
+          <select class="select-cat" title="select category">
+            <option selected=selected><a href="#" class=all>All</a></option>
+            <option><a href="#">All Categories</a></option>
+            <option><a>Lifestyle</a></option>
+            <option><a>Electronics</a></option>
+            <option><a>Grocery</a></option>
+            <option><a>Sports</a></option>
+            <option><a>Stationery</a></option>
+            <option><a>Music</a></option>
+            <option><a>Movies</a></option>
+            <option><a>Books</a></option>
+            <option><a>Cars</a></option>
+            <option><a>Gadgets</a></option>
+          </select>
+
+          <input type="text" class="searcharea" list="items" name="searchtext" placeholder="Search">
+          <datalist id=items>
+          <option value="Moto X4">In Electronics</option>
+          <option value="Mi A1">In Electronics</option>
+          <option value="LeEco Le 2">In Electronics</option>
+          <option value="LeEco Le 1s">In Electronics</option>
+          <option value="HP Pavillion">In Electronics</option>
+          <option value="Acer Predator">In Electronics</option>
+          <option value="Honor 9i">In Electronics</option>
+          <option value="Mobile Back Covers">in Accesories</option>
+          <option value="Moto G5 S plus">in Electronics</option>
+          <option value="Fastrack Watches">in Watches</option>
+          <option value="Object Oriented Programming in C++">In Books and Novels</option>
+
+          </datalist>
+          <a href="#"><img class="search-btn" src="search.png"></a>
+        </form>
+
+      </div>
+      <!--Cart and Login-->
+      <div id=cart_login>
+      <span class=cart><a href="cart.html"><i style="font-size:35px;margin-left:-5px;color:white;margin-top:5px;" class="fas fa-shopping-cart"></i><p class=image-caption >Cart</p></a></span>
+    <span class=login><a href="login.html" target="_blank">
+      <i style="font-size:35px;color:white;margin-top:5px;margin-left:20px;" class="fas fa-user-circle"></i>
+      <p class=image-caption >Login/Signup</p></a><span>
+      </div>
+    </header>
+    <div class="divide">
+    </div>
+    <div class="navigation">
+      <span class="open-slide">
+    <a href="#" class=open-btn onclick="openSlideMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+    </a>
+    </span>
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a>
+      <a href="about_page.html"><i class="fas fa-info-circle"></i>&nbsp;About</a>
+      <a href="help_page.innerHTML"><i class="fas fa-wrench"></i>&nbsp;Help</a>
+      <a href="contact.html"><i class="far fa-envelope"></i>&nbsp;Contact</a>
+
+    </div>
+    <ul class=menu-options>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about_page.html">About</a></li>
+      <li><a href="help_page.innerHTML">Help</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
+    <style media="screen">
+      .main_bdy
+      {
+        height:auto;
+        background:#F9FDFD;
+      }
+      .gap{
+        height:20px;
+      }
+      .div1{
+        width:60%;
+        height:200px;
+        box-shadow: 0 0 1px grey;
+        margin:0px 0 0 80px;
+        background: white;
+      }
+      .div11
+      {
+        background:#5C6565;
+        height: 40px;
+      }
+      .div2{
+        width:60%;
+        height:auto;
+        box-shadow: 0 0 1px grey;
+        margin:30px 0 0 80px;
+        background: #F9FFFF;
+      }
+      .div22
+      {
+        background:#5C6565;
+        height: 40px;
+      }
+      .div3{
+        width:60%;
+        height:auto;
+        box-shadow: 0 0 1px grey;
+        margin:30px 0 0 80px;
+        background: #F9FFFF;
+      }
+      .div33
+      {
+        background:#5C6565;
+        height: 40px;
+      }
+      .div4{
+
+      }
+      #inp
+      {
+        width:250px;
+        font-size: 16px;
+        border:none;
+        padding:13px 0 10px 0 ;
+        margin:30px 0 0 80px;
+        border-bottom: 1px solid lightgrey;
+        outline:none;
+      }
+      #inp:focus
+      {
+        border-bottom:1px solid #0D74F3;
+        transition:.3s;
+      }
+      #btn1
+      {
+        width:250px;
+        text-align: center;
+        background:#0D74F3;
+        border:none;
+        outline:none;
+        padding:13px 0 13px 0;
+        color:white;
+        font-weight: bold;
+        box-shadow: 0 0 2px black;
+        cursor: pointer;
+        border-radius: 2px;
+        margin:20px 0 0 80px;
+      }
+      #inp~label
+      {
+        position:absolute;
+        font-weight:bold;
+        color: #0D74F3;
+        margin:44px 0 0 -254px;
+        opacity: .6;
+        transition: .1s;
+        pointer-events:none;
+      }
+      #inp:focus~label
+      {
+        opacity: 1;
+        position:absolute;
+        margin:23px 0 0 -250px;
+        font-size: 13px;
+        transition: .2s ;
+      }
+      label
+      {
+        margin:15px 0 0 -280px;position:absolute;
+        font-size: 13px;
+        color:grey;
+
+      }
+      .txtbox{
+        width:280px;
+        height:40px;
+        padding:12px 0 0px 15px;
+        margin:10px 0 0 20px;
+        outline:none;
+        border:none;
+        border:1px solid lightgrey;
+      }
+      .txtbox:focus
+      {
+        border-color:#0D74F3;
+
+        transition:.2s;
+      }
+      .main_details
+      {
+        margin:20px 0 0 50px;
+      }
+      #save_add
+      {
+        box-shadow:0 0 5px black;
+        margin:20px 0 10px 400px;
+        text-align:center;
+        width:250px;height:40px;
+        border:none;
+        background:#0D74F3;
+        border-radius:3px;
+        color:white;
+        font-weight:550;
+        font-size:15px;
+        cursor: pointer;
+      }
+      .addr_type{
+        margin:30px 0 0 20px;
+      }
+      .p_t{
+        text-transform: uppercase;
+        font-weight:550;
+        padding:10px 20px 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_bdy">
+      <div class="gap">
+
+      </div>
+      <script type="text/javascript">
+        function test()
+        {
+          var a = document.getElementById('inp').value;
+          document.getElementById('lab1').style.marginTop = "25px";
+        }
+      </script>
+      <div class="div1">
+        <div class="div11">
+          <p style="color:#5C6565;background:white;padding:2px 7px 2px 7px;border-radius:2px;float:left;margin:10px 0 0 50px;width:10px;">1</p>
+          <p style="position: absolute;text-transform:uppercase;color:white;font-size:16px;font-weight:bold;margin:12px 0 0 120px;">Mobile Number Verification</p>
+        </div>
+        <input onclick="test()" id=inp type="text" name="" value=""> <label for="inp" id=lab1>Enter Email/mobile Number</label> <br>
+        <input id=btn1 type="submit" name="" value="CONTINUE">
+      </div>
+      <div class="div2">
+        <div class="div22">
+          <p style="color:#5C6565;background:white;padding:2px 7px 2px 7px;border-radius:2px;float:left;margin:10px 0 0 50px;width:10px;">2</p>
+          <p style="position: absolute;text-transform:uppercase;color:white;font-size:16px;font-weight:bold;margin:12px 0 0 120px;">delievery address</p>
+
+        </div>
+        <div class="main_details">
+          <input class=txtbox type="text" id=name1><label for="name1">Name</label>
+          <input class=txtbox type="text" id=phone1><label for="phone1">Phone Number</label><br>
+          <input class=txtbox type="text" id=pincode1><label for="pincode1">Pincode</label>
+          <input class=txtbox type="text" id=locality1><label for="locality1">Locality</label><br>
+          <textarea style="font-family: arial;height:75px;width:601px;margin:10px 0 0 20px;padding:20px 0 0 15px;" id=adderss1></textarea>
+          <label for="address1" style="margin:14px 0 0 -610px;">Address</label><br>
+          <input class=txtbox type="text" id=city1><label for="city1">City/Town</label>
+          <input class=txtbox type="text" id=state1><label for="state1">State</label><br>
+          <input class=txtbox type="text" id=landmark1><label for="landmark1">Landmark</label>
+          <input class=txtbox type="text" id=alt1><label for="name1">Alternative Phone Number</label><br>
+          <div class="addr_type">
+            <p style="margin:-20px 0 20px 10px;font-size:13px;color:grey;">Address type</p>
+            <input class=rad type="radio" name="type" value="home"><a style="margin-left:10px;font-size:15px;">Home (All day delievery)</a>
+            <input style="margin-left:30px;" class=rad type="radio" name="type" value="office">
+            <a style="margin-left:10px;font-size:15px;">Office (Delievery between 10 AM to 5 PM)</a><br>
+            <input id=save_add type="submit" name="" value="SAVE ADDRESS">
+          </div>
+
+        </div>
+
+      </div>
+      <script type="text/javascript">
+        function paytm()
+        {
+          document.getElementById('typ11').style.height = '100px';
+          document.getElementById('typ22').style.height = '0px';
+          document.getElementById('typ33').style.height = '0px';
+          document.getElementById('typ44').style.height = '0px';
+        }
+        function deb_c()
+        {
+          document.getElementById('typ22').style.height = '150px';
+          document.getElementById('typ11').style.height = '0px';
+          document.getElementById('typ33').style.height = '0px';
+          document.getElementById('typ44').style.height = '0px';
+        }
+        function net_b()
+        {
+          document.getElementById('typ33').style.height = '120px';
+          document.getElementById('typ11').style.height = '0px';
+          document.getElementById('typ22').style.height = '0px';
+          document.getElementById('typ44').style.height = '0px';
+        }
+        function cod()
+        {
+          document.getElementById('typ44').style.height = '120px';
+          document.getElementById('typ11').style.height = '0px';
+          document.getElementById('typ22').style.height = '0px';
+          document.getElementById('typ33').style.height = '0px';
+        }
+        function che()
+        {
+          var a = document.getElementById('pytm_inp').value;
+          var b = document.getElementById('card_inp').value;
+          if(a.length == 9||b.length==15)
+          {
+            document.getElementById('proceed').style.background = "#0D74F3";
+            document.getElementById('proceed').style.cursor = "pointer";
+            document.getElementById('pay').style.background = "#0D74F3";
+            document.getElementById('pay').style.cursor = "pointer";
+          }
+          else if(a.length<9||b.length<15)
+          {
+            document.getElementById('proceed').style.background = 'grey';
+            document.getElementById('pay').style.background = 'grey';
+          }
+        }
+      </script>
+      <style media="screen">
+        .heading123{
+          border-bottom:1px solid lightgrey;
+          padding:10px 0 10px 55px;
+          margin-bottom:10px;
+          text-transform:uppercase;
+          font-weight:bold;
+          font-size:14px;
+          color:black;
+          cursor:pointer;
+        }
+        .nos{
+          float:left;
+          margin:6px 0 0 20px;
+          font-size:14px;
+          background:#0D74F3;
+          color:white;
+          font-weight:bold;
+          padding:3px 8px 3px 8px;
+          border-radius:10px;
+        }
+        .tx123{
+          overflow-y: hidden;
+          height:0px;
+          background:#FEF9FE;
+          transition:.2s;
+        }
+        #pytm_inp{
+          outline:none;
+          border:1px solid lightgrey;
+          margin:20px 0 0 50px;
+          height:25px;
+          font-size:18px;
+          padding:5px 0 5px 15px;
+          width:150px;
+        }
+        #pytm_inp::placeholder{
+          font-size:14px;
+        }
+        #card_inp{
+          outline:none;
+          border:1px solid lightgrey;
+          margin:7px 0 0 50px;
+          height:25px;
+          font-size:14px;
+          padding:5px 0 5px 10px;
+          width:170px;
+        }
+        #cvv{
+          outline:none;
+          border:1px solid lightgrey;
+          margin:-37px 0 0 170px;
+          height:25px;
+          font-size:14px;
+          padding:5px 0 5px 10px;
+          width:50px;
+          float:left;
+        }
+        #cvv:focus,#card_inp:focus,#pytm_inp:focus{
+          outline:none;
+          border:1px solid #0D74F3;
+        }
+      </style>
+      <div class="div3">
+        <div class="div33">
+          <p style="color:#5C6565;background:white;padding:2px 7px 2px 7px;border-radius:2px;float:left;margin:10px 0 0 50px;width:10px;">3</p>
+          <p style="position: absolute;text-transform:uppercase;color:white;font-size:16px;font-weight:bold;margin:12px 0 0 120px;">payment options</p>
+        </div>
+        <div onclick="paytm()" style="cursor:pointer;"><p class=nos style="margin-top:10px;">1</p><img src=paytm1.png style="height:20px;margin:0 0 0 -45px;border:none;" class=heading123 ></div>
+        <hr style="height:0px;">
+        <div class=tx123 id=typ11 >
+          <p style="font-size:16px;margin:10px 0 0 50px;font-weight:bold;">You will be redirected to paytm payment gateway</p>
+          <input onkeypress="che()" id=pytm_inp maxlength=10 placeholder="Enter Paytm number" type="text">
+          <input id=proceed  style="width:100px;margin-left:30px;font-size:14px;font-weight:bold;color:white;background:grey;border:none;border-radius:3px;outline:none;padding:11px 10px 10px 10px;" type="submit" name="" value="PROCEED">
+        </div>
+        <p class=nos>2</p> <p class=heading123 onclick="deb_c()">Credit / Debit / ATM card</p>
+        <div class=tx123 id=typ22>
+
+          <p style="margin:10px 0 0 50px;font-size:12px;">Enter card number</p> <input onkeypress="che()" id=card_inp maxlength=16  type="text">
+          <input id=pay  style="width:100px;margin-left:30px;font-size:14px;font-weight:bold;color:white;background:grey;border:none;border-radius:3px;outline:none;padding:11px 10px 10px 10px;" type="submit" name="" value="PAY">
+          <br><a style="font-size:12px;margin:5px 0 0 50px;">Expiry Date</a>
+          <div id=date_e style="width:112px;height:35px;background:white;margin:5px 0 0 50px;border:1px solid grey;">
+            <select style="height:35px;border:none;outline:none;">
+              <option value="MM" selected>MM</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <select style="height:35px;width:60px;border:none;outline:none;">
+              <option value="YY" selected>YY</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+            </select>
+          </div>
+          <input onkeypress="che()" id=cvv maxlength=3 placeholder="CVV" type="text">
+        </div>
+        <p class=nos>3</p> <p class=heading123 onclick="net_b()">Net Banking</p>
+        <div class=tx123 id=typ33 >
+          <input style="margin:80px 0 0 120px;" type="text" name="" value="">
+        </div>
+        <p class=nos>4</p> <p class=heading123 onclick="cod()">Cash on Delievery</p>
+        <div class=tx123 id=typ44 >
+          <input style="margin:80px 0 0 120px;" type="text" name="" value="">
+        </div>
+      </div>
+      <div style="height:50px;">
+
+      </div>
+    </div>
+  <div class="footer">
+      <div class="lists">
+        <ul>
+          <li class=mainl><h3>Get to Know us</h3>
+          <ul class="list1">
+            <li>  <a href="about_page.html">About us</a> </li>
+            <li>  <a href="#">Press Release</a> </li>
+            <li>  <a href="">Our Services</a> </li>
+            <li>  <a href="#">NGOs Run By Shopper's Street</a> </li>
+          </ul></li>
+        <li class=mainl>  <h3>Connect with us</h3>
+          <ul class="list2">
+            <li id=facebook>  <a href="https://www.facebook.com/ashutoshsinghai7"><i class="fab fa-facebook-f"> </i>&nbsp; Facebook </a></li>
+            <li id=twitter>  <a href="https://twitter.com/"><i class="fab fa-twitter"></i>&nbsp; twitter</a></li>
+            <li id=insta>  <a href="https://www.instagram.com/ashutosh_singhai"><i class="fab fa-instagram"></i>&nbsp; Instagram </a> </li>
+            <li id=google>  <a href="https://plus.google.com/u/0/101489217324020959317"><i class="fab fa-google-plus-g"></i>&nbsp; Google+</a></li>
+            <li id=youtube>  <a href="https://www.youtube.com/">
+              <i class="fab fa-youtube"></i>&nbsp; Youtube </a></li>
+          </ul>
+        </li>
+        <li class=mainl>
+          <h3>Payment Methods</h3>
+          <ul class="list3">
+            <li>  <a href="#">Credit card &nbsp;<i class="fas fa-credit-card"></i></a> </li>
+            <li>  <a href="#">Debit card &nbsp; <i class="far fa-credit-card"></i></a> </li>
+            <li>  <a href="#">Net Banking</a> </li>
+            <li>  <a href="#">Mobile wallets</a> </li>
+            <li>
+              <ul>
+                <li> <a href="https://www.visa.co.in/pay-with-visa/find-a-card/debit-cards.html"><img src="cards-logo.png" height=30px></a> </li>
+                <li> <a href="https://www.phonepe.com/en/"><img id=phonepe src="phonepe.png" height=30px></a> </li>
+                <li> <a href="https://tez.google.com/"><img id=tez src="tez.png" height=30px></a> </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class=mainl>
+          <h3>Let us help You</h3>
+          <ul class="list4">
+            <li>  <a href="#">Your Account</a> </li>
+            <li>  <a href="#">Return Center</a> </li>
+            <li>  <a href="#">100% guarenteed Returns</a> </li>
+            <li>  <a href="help_page.html"><i class="far fa-question-circle"></i>&nbsp;Help</a> </li>
+          </ul>
+        </li>
+</ul>
+      </div>
+      <div style="clear:both;padding-top:40px;width:95%;margin-left:30px;" class="hr">
+<hr style="display:block;height:1px;border:none;background:grey;"/ >
+      </div>
+      <table class=table-last align=center cellspacing=0px cellpadding=15px border=1px>
+        <tr>
+          <td>Track Your Orders <img id=track src="trackers.png" height="50" align=middle></td>
+          <td>Easy and Fast Returns <img id=return src="returns.png" height="50" align=middle></td>
+          <td>Online Cancellations <img id=cancellation src="cancellation.png" height="50" align=middle></td>
+        </tr>
+      </table>
+      <h3 id=partners>Our Business Partners</h3>
+      <div class="partners">
+
+<ul>
+  <li> <a href="https://www.flipkart.com"><img src="partners/flipkart.png"></a> </li>
+  <li> <a href="https://www.amazon.in"><img src="partners/amazon.png"></a> </li>
+  <li> <a href="https://www.hp.com"><img src="partners/hp.jpg"></a> </li>
+  <li> <a href="http://www.spacex.com"><img src="partners/spacex.png"></a> </li>
+  <li> <a href="https://www.microsoft.com"><img src="partners/microsoft.png"></a> </li>
+  <li> <a href="https://www.alibaba.com"><img src="partners/alibaba.jpg"></a> </li>
+  <li> <a href="https://www.paypal.com/us/home"><img src="partners/paypal.png"></a> </li>
+</ul>
+<div style="position:absolute;width:100%;background:#17235C;margin-top:40px;text-align:center;">
+C o p y r i g h t &nbsp;&copy;&nbsp;&nbsp;&nbsp;   2 0 1 8&nbsp;&nbsp;&nbsp;   S h o p p e r ' s &nbsp;&nbsp;&nbsp;  S t r e e t   &nbsp;&nbsp;&nbsp;A l l &nbsp;&nbsp;&nbsp;  R i g h t s&nbsp;&nbsp;&nbsp;   R e s e r v e d.</div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Shop</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+<link rel="shortcut icon" href="tez.png" type="image/png" style="border-radius:10px;">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <header class="header1">
+<div id=header><p>Works for Humanity</p></div>
+    </header>
+    <script type="text/javascript">
+
+      function openSlideMenu(){
+        document.getElementById('side-menu').style.width='250px';
+      }
+      function closeSlideMenu(){
+        document.getElementById('side-menu').style.width='0px';
+        document.getElementById('main').style.marginLeft='0px';
+      }
+      // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+function reason_f()
+{
+	document.getElementById('read_reason').style.height="150px";
+  document.getElementById('read_reason').style.padding="20px";
+}
+function close_reas()
+{
+  document.getElementById('read_reason').style.height="0";
+  document.getElementById('read_reason').style.padding="0px";
+}
+function det1()
+{
+  document.getElementById('det1').style.height="70px";
+  document.getElementById('det1').style.padding="20px";
+}
+function det_c1()
+{
+  document.getElementById('det1').style.height="0px";
+  document.getElementById('det1').style.padding="0px";
+}
+function det2()
+{
+  document.getElementById('det2').style.height="70px";
+  document.getElementById('det2').style.padding="20px";
+}
+function det_c2()
+{
+  document.getElementById('det2').style.height="0px";
+  document.getElementById('det2').style.padding="0px";
+}
+function det3()
+{
+  document.getElementById('det3').style.height="70px";
+  document.getElementById('det3').style.padding="20px";
+}
+function det_c3()
+{
+  document.getElementById('det3').style.height="0px";
+  document.getElementById('det3').style.padding="0px";
+}
+function open_main()
+{
+  document.getElementById('cur1').style.marginLeft="-50%";
+  document.getElementById('cur2').style.width="0";
+  document.getElementById('cur2').style.marginLeft="100%";
+    document.getElementById('cur1').style.opacity="0";
+    document.getElementById('cur2').style.opacity="0";
+    document.getElementById('cur2').style.transition="1s";
+    document.getElementById('enter_site').style.display="none";
+    document.getElementById('welcome_t').style.display="none";
+    document.getElementById('abt').style.display="none";
+}
+function dis_abt()
+{
+  document.getElementById('abtdis').style.display="block";
+  document.getElementById('body1').style.height="2100px";
+  document.getElementById('dev_btn').style.display="none";
+}
+    </script>
+    <style media="screen">
+    .main_bdy{
+      background: url("wooden_back.jpg");
+      background-size: cover;
+      height:auto;
+    }
+      #img_top
+      {
+        margin-left: 180px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      #img_sec
+      {
+        opacity: .4;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-left: 250px;
+        margin-top:40px;
+        box-shadow: 0 0 10px darkorange;
+      }
+      #img_txt
+      {
+        font-size: 30px;
+        margin-top:-115px;
+        margin-left:470px;
+        font-weight: bold;
+        color:#1D0B8E;
+        position:absolute;
+        font-family: "Bahnschrift Light";
+      }
+      #img_txt2
+      {
+        font-size: 20px;
+        margin-top:-75px;
+        margin-left:450px;
+        font-weight: bold;
+        color:black;
+        opacity:.8;
+        position:absolute;
+        font-family: "Bahnschrift Light";
+      }
+      #img_txt3
+      {
+        font-size: 20px;
+        margin-top:-50px;
+        margin-left:400px;
+        font-weight: bold;
+        color:black;
+        position:absolute;
+        font-family: "Bahnschrift Light";
+      }
+      #img_2
+      {
+        height:50px;
+        margin-left: 512px;
+        margin-top:20px;
+        border-radius: 50px;
+      }
+      #reason
+      {
+        margin-top:-40px;
+        margin-left: 580px;
+        font-family: "Bahnschrift Light";
+        font-size: 22px;
+        font-weight: bolder;
+        color:#1D0B8E;
+      }
+      #read_reason
+      {
+          background: black;
+        color:white;
+        position:absolute;
+          height : 0;
+          z-index: 100;
+          font-family: "calibri";
+          overflow-y: hidden;
+          font-size:20px;
+          transition: 0.2s;
+          opacity:.9;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          width:600px;
+          margin-left:28%;
+          padding-left: 10px;
+      }
+      #Read_btn
+      {
+        height:40px;
+        width:200px;
+        font-size: 14px;
+        background: #1D0B8E;
+        cursor: pointer;
+        color:white;
+        border-radius: 20px;
+        border:none;
+        outline:none;
+        margin-left: 44%;
+        margin-top:30px;
+      }
+      .or
+      {
+        color:#F68F15
+      }
+      #close_btn
+      {
+          height:30px;
+          width:70px;
+          color:white;
+          border:none;
+          border-radius:20px;
+          cursor: pointer;
+          outline:none;
+          font-size: 14px;
+          background: #1D0B8E;
+          margin-left:43%;
+          margin-top:10px;
+      }
+      #ab_dev
+      {
+        color:white;
+        width:400px;
+        text-align:center;
+        background:#16045F;
+        margin-left:20px;
+        padding:20px 30px 20px 30px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow:0 0 10px black;
+      }
+      #arrow
+      {
+        width:30px;
+        position: absolute;
+        margin-top:35%;
+        margin-left:-38.5%;
+      }
+      .det
+      {
+        position: absolute;
+        width:400px;
+        height:100px;
+        font-size:48px;
+        padding:50px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow:0 0 12px black;
+      }
+      #det1
+      {
+          margin:-200px 0 0 320px;
+      }
+      #det2
+      {
+        font-size:42px;
+          margin:-200px 0 0 500px;
+      }
+      #det3
+      {
+        font-size:42px;
+
+          margin:-200px 0 0 320px;
+      }
+      #det4
+      {
+        margin:-200px 0 0 500px;
+      }
+      #ashu
+      {
+        width:400px;
+        height:auto;
+        margin-left: 200px;
+        margin-top:100px;
+        background:black;
+        color:white;
+      }
+
+    </style>
+    <header id=mainheader>
+      <div id=1st class=logo>
+        <span id=ist ><a href="http://www.facebook.com">Shopper's </a></span>&nbsp;<span id=iist ><a href="http://www.facebook.com">street</a></span>
+      </div>
+      <!--search area-->
+      <div id=search>
+        <form action="" method="post">
+
+          <select class="select-cat" title="select category">
+            <option selected=selected><a href="#" class=all>All</a></option>
+            <option><a href="#">All Categories</a></option>
+            <option><a>Lifestyle</a></option>
+            <option><a>Electronics</a></option>
+            <option><a>Grocery</a></option>
+            <option><a>Sports</a></option>
+            <option><a>Stationery</a></option>
+            <option><a>Music</a></option>
+            <option><a>Movies</a></option>
+            <option><a>Books</a></option>
+            <option><a>Cars</a></option>
+            <option><a>Gadgets</a></option>
+          </select>
+
+          <input type="text" class="searcharea" list="items" name="searchtext" placeholder="Search">
+          <datalist id=items>
+          <option value="Moto X4">In Electronics</option>
+          <option value="Mi A1">In Electronics</option>
+          <option value="LeEco Le 2">In Electronics</option>
+          <option value="LeEco Le 1s">In Electronics</option>
+          <option value="HP Pavillion">In Electronics</option>
+          <option value="Acer Predator">In Electronics</option>
+          <option value="Honor 9i">In Electronics</option>
+          <option value="Mobile Back Covers">in Accesories</option>
+          <option value="Moto G5 S plus">in Electronics</option>
+          <option value="Fastrack Watches">in Watches</option>
+          <option value="Object Oriented Programming in C++">In Books and Novels</option>
+
+          </datalist>
+          <a href="#"><img class="search-btn" src="search.png"></a>
+        </form>
+
+      </div>
+      <!--Cart and Login-->
+      <div id=cart_login>
+      <span class=cart><a href="#"><i style="font-size:35px;margin-left:-5px;color:white;margin-top:5px;" class="fas fa-shopping-cart"></i><p class=image-caption >Cart</p></a></span>
+    <span class=login><a href="login.html" target="_blank">
+      <i style="font-size:35px;color:white;margin-top:5px;margin-left:20px;" class="fas fa-user-circle"></i>
+      <p class=image-caption >Login/Signup</p></a><span>
+      </div>
+    </header>
+    <div class="divide">
+    </div>
+    <div class="navigation">
+      <span class="open-slide">
+    <a href="#" class=open-btn onclick="openSlideMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+    </a>
+    </span>
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#"><i class="fas fa-home"></i>&nbsp;Home</a>
+      <a href="#"><i class="fas fa-info-circle"></i>&nbsp;About</a>
+      <a href="#"><i class="fas fa-wrench"></i>&nbsp;Services</a>
+      <a href="#"><i class="far fa-envelope"></i>&nbsp;Contact</a>
+
+    </div>
+    <ul class=menu-options>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
+    <style media="screen">
+      #enter_site:hover
+      {
+        opacity:.8;
+        box-shadow:0 0 10px  #24EBEB;
+        transition:.2s;
+      }
+      #welcome_t
+      {
+        font-family:'Brush Script MT';
+        color:#24EBEB;
+        font-size: 48px;
+        font-weight: lighter;
+        padding:20px 50px 100px 100px;
+        margin:-50px 0 0 -180px;
+        width:750px;height:120px;
+        position:absolute;
+        top:50%;left:30%;
+        z-index:10000;
+        transition:.5s;
+        border: 1px solid #24EBEB;
+      }
+      #abt
+      {
+        color:#24EBEB;
+        font-size: 48px;
+        font-weight: lighter;
+        position:absolute;
+        top:58%;left:41%;
+        z-index:10000;
+        transition:.5s;
+      }
+      .imgs
+      {
+        width:200px;
+        box-shadow:0 0 10px red;
+        border-radius:150px;
+        margin-top: 70px;
+      }
+      .point
+      {
+        width:50px;
+        height:50px;
+        background:white;
+        z-index:100;
+        transform:rotate(45deg);
+      }
+      .abtd
+      {
+        display: none;
+      }
+    </style>
+    </head>
+    <div id=body1 class="main_bdy">
+      <div id=cur1 class="curt1" style="overflow-x: hidden;transition:1s;opacity:.9;height:856px;width:50%;background:black;position:absolute;z-index:100;">
+
+      </div>
+      <div class="textinfront">
+        <h1 id=welcome_t><span style="font-family:verdana;">Welcome to</span> Bring Smile Organisation</h1>
+        <h1 id=abt>About Us</h1>
+        <button id=enter_site onclick="open_main()" style="color: #24EBEB;font-size:20px;background:none;border:2px solid #24EBEB; cursor:pointer;position:absolute;z-index:10000;top:70%;left:43%;height:50px;width:150px;" type="button" name="button">Read</button>
+      </div>
+      <div id=cur2 class="curt2" style="transition:1s;opacity:.9;height:856px;margin-left:50%;width:50%;background:black;position:absolute;z-index:100;">
+
+      </div>
+      <img id=img_top src="20141125-225730-header.png" alt="THIS IS HEAER IMAGE">
+      <img id=img_sec src="about_img.png" alt="">
+      <p id=img_txt>LAUNCHED &nbsp;IN &nbsp;APRIL &nbsp;2012</p>
+      <p id=img_txt2>A Non Profit Non Govt. Organisation working for Humanity</p>
+      <p id=img_txt3>With over <font color="#008DF9" size="6px">8.5</font> matric tonnes of grain distributed across<font color="#008DF9" size="6px">4+</font> states </p>
+        <img id=img_2 src="about_img2.png" alt="">
+        <p id=reason>REASON WHY STARTED</p>
+        <input id="Read_btn" type="button" name="" value="Read Story" onclick="reason_f()">
+        <p id=read_reason>
+          This organisation was created by <a style="color:#F68F15;">group of students have a vision of changing society of <a class=or>O</a>rai <a class=or>U</a>ttar Pradesh <a class=or></a>India.
+This Organisation  was created as the result of the hard work of student <a style="font-size:24px;color:#008DF9;">Mr.Akarsh Mishra</a>.
+At that time it was just a small organisation but now it has become the legacy with over
+ 4.5K members across 5+ states of India<br>
+        <input id=close_btn type="button" name="" value="close" onclick="close_reas()"> </p>
+        <img style="margin:50px 0 60px 430px;border-radius:30px;opacity:.7;" src="bc1.jpeg" alt="">
+        <p style="position:absolute;cursor:pointer;margin:-50px 0 0 43%;padding:10px 15px 10px 55px;font-size:14px;color:white;background:#1D0B8E;border-radius:20px;width:180px;" id=dev_btn onclick="dis_abt()">Read about developers</p>
+<div id=abtdis class="abtd">
+        <img id=arrow src="arr.png" alt=""> <h1 id=ab_dev>About The Developers</h1>
+        <div class="about_s">
+          <img class="imgs" src="kshitiz2.jpeg" style="margin-left: 5%;" alt=""><br>
+          <div class="point" style="margin:-100px 0 0 295px;position:absolute;">
+
+          </div> <p id=det1 class=det>क्षितिज कुमार सिंह(दुखी आत्मा)</p>
+          <img class="imgs" src="adarsh.jpeg" style="margin-left: 80%;margin-top:60px;" alt=""><br>
+          <p id=det2 class=det>अरे भैयां ( आदर्श यादव )</p><div class="point" style="margin:-100px 0 0 72%;">
+
+          </div>
+          <img class="imgs" src="gagan.jpeg" style="margin-left: 5%;margin-top:100px;" alt=""><br>
+          <div class="point" style="margin:-100px 0 0 295px;position:absolute;">
+
+          </div><p id=det3 class=det>( गगनदीप सिंह )गग्गु भैया आजमपुरवाले</p>
+            <img class="imgs" src="ashutosh.jpg" style="margin-left: 80%;margin-top:60px;" alt="">
+
+          </div><p id=det4 class=det>( आशुतोष सिंघई )इन सब का बाप</p><div class="point" style="margin:-100px 0 0 72%;">
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+      <div class="lists">
+        <ul>
+          <li class=mainl><h3>Get to Know us</h3>
+          <ul class="list1">
+            <li>  <a href="#">About us</a> </li>
+            <li>  <a href="#">Press Release</a> </li>
+            <li>  <a href="#">Our Services</a> </li>
+            <li>  <a href="#">NGOs Run By Shopper's Street</a> </li>
+          </ul></li>
+        <li class=mainl>  <h3>Connect with us</h3>
+          <ul class="list2">
+            <li id=facebook>  <a href="https://www.facebook.com/ashutoshsinghai7"><i class="fab fa-facebook-f"> </i>&nbsp; Facebook </a></li>
+            <li id=twitter>  <a href="https://twitter.com/"><i class="fab fa-twitter"></i>&nbsp; twitter</a></li>
+            <li id=insta>  <a href="https://www.instagram.com/ashutosh_singhai"><i class="fab fa-instagram"></i>&nbsp; Instagram </a> </li>
+            <li id=google>  <a href="https://plus.google.com/u/0/101489217324020959317"><i class="fab fa-google-plus-g"></i>&nbsp; Google+</a></li>
+            <li id=youtube>  <a href="https://www.youtube.com/">
+              <i class="fab fa-youtube"></i>&nbsp; Youtube </a></li>
+          </ul>
+        </li>
+        <li class=mainl>
+          <h3>Payment Methods</h3>
+          <ul class="list3">
+            <li>  <a href="#">Credit card &nbsp;<i class="fas fa-credit-card"></i></a> </li>
+            <li>  <a href="#">Debit card &nbsp; <i class="far fa-credit-card"></i></a> </li>
+            <li>  <a href="#">Net Banking</a> </li>
+            <li>  <a href="#">Mobile wallets</a> </li>
+            <li>
+              <ul>
+                <li> <a href="https://www.visa.co.in/pay-with-visa/find-a-card/debit-cards.html"><img src="cards-logo.png" height=30px></a> </li>
+                <li> <a href="https://www.phonepe.com/en/"><img id=phonepe src="phonepe.png" height=30px></a> </li>
+                <li> <a href="https://tez.google.com/"><img id=tez src="tez.png" height=30px></a> </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class=mainl>
+          <h3>Let us help You</h3>
+          <ul class="list4">
+            <li>  <a href="#">Your Account</a> </li>
+            <li>  <a href="#">Return Center</a> </li>
+            <li>  <a href="#">100% guarenteed Returns</a> </li>
+            <li>  <a href="#"><i class="far fa-question-circle"></i>&nbsp;Help</a> </li>
+          </ul>
+        </li>
+</ul>
+      </div>
+      <div style="clear:both;padding-top:40px;width:95%;margin-left:30px;" class="hr">
+<hr style="display:block;height:1px;border:none;background:grey;"/ >
+      </div>
+      <table class=table-last align=center cellspacing=0px cellpadding=15px border=1px>
+        <tr>
+          <td>Track Your Orders <img id=track src="trackers.png" height="50" align=middle></td>
+          <td>Easy and Fast Returns <img id=return src="returns.png" height="50" align=middle></td>
+          <td>Online Cancellations <img id=cancellation src="cancellation.png" height="50" align=middle></td>
+        </tr>
+      </table>
+      <h3 id=partners>Our Business Partners</h3>
+      <div class="partners">
+
+<ul>
+  <li> <a href="https://www.flipkart.com"><img src="partners/flipkart.png"></a> </li>
+  <li> <a href="https://www.amazon.in"><img src="partners/amazon.png"></a> </li>
+  <li> <a href="https://www.hp.com"><img src="partners/hp.jpg"></a> </li>
+  <li> <a href="http://www.spacex.com"><img src="partners/spacex.png"></a> </li>
+  <li> <a href="https://www.microsoft.com"><img src="partners/microsoft.png"></a> </li>
+  <li> <a href="https://www.alibaba.com"><img src="partners/alibaba.jpg"></a> </li>
+  <li> <a href="https://www.paypal.com/us/home"><img src="partners/paypal.png"></a> </li>
+</ul>
+      </div>
+      Copyright &copy; 2018 Shopper's Street All Rights Reserved.
+    </div>
+  </body>
+</html>
