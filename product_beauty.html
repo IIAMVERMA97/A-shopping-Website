@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Shop</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+<link rel="shortcut icon" href="tez.png" type="image/png" style="border-radius:10px;">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <header class="header1">
+<div id=header><p>World's Fastest Growing Site for Online Shopping</p></div>
+    </header>
+    <script type="text/javascript">
+      function openSlideMenu(){
+        document.getElementById('side-menu').style.width='250px';
+        document.getElementById('main');
+      }
+      function closeSlideMenu(){
+        document.getElementById('side-menu').style.width='0px';
+        document.getElementById('main').style.marginLeft='0px';
+      }
+      // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script>
+    <header id=mainheader>
+      <div id=1st class=logo>
+        <span id=ist ><a href="http://www.facebook.com">Shopper's </a></span>&nbsp;<span id=iist ><a href="http://www.facebook.com">street</a></span>
+      </div>
+      <!--search area-->
+      <div id=search>
+        <form action="" method="post">
+
+          <select class="select-cat" title="select category">
+            <option selected=selected><a href="#" class=all>All</a></option>
+            <option><a href="#">All Categories</a></option>
+            <option><a>Lifestyle</a></option>
+            <option><a>Electronics</a></option>
+            <option><a>Grocery</a></option>
+            <option><a>Sports</a></option>
+            <option><a>Stationery</a></option>
+            <option><a>Music</a></option>
+            <option><a>Movies</a></option>
+            <option><a>Books</a></option>
+            <option><a>Cars</a></option>
+            <option><a>Gadgets</a></option>
+          </select>
+
+          <input type="text" class="searcharea" list="items" name="searchtext" placeholder="Search">
+          <datalist id=items>
+          <option value="Moto X4">In Electronics</option>
+          <option value="Mi A1">In Electronics</option>
+          <option value="LeEco Le 2">In Electronics</option>
+          <option value="LeEco Le 1s">In Electronics</option>
+          <option value="HP Pavillion">In Electronics</option>
+          <option value="Acer Predator">In Electronics</option>
+          <option value="Honor 9i">In Electronics</option>
+          <option value="Mobile Back Covers">in Accesories</option>
+          <option value="Moto G5 S plus">in Electronics</option>
+          <option value="Fastrack Watches">in Watches</option>
+          <option value="Object Oriented Programming in C++">In Books and Novels</option>
+
+          </datalist>
+          <a href="#"><img class="search-btn" src="search.png"></a>
+        </form>
+
+      </div>
+      <!--Cart and Login-->
+      <div id=cart_login>
+      <span class=cart><a href="#"><i style="font-size:35px;margin-left:-5px;color:white;margin-top:5px;" class="fas fa-shopping-cart"></i><p class=image-caption >Cart</p></a></span>
+    <span class=login><a href="login.html" target="_blank">
+      <i style="font-size:35px;color:white;margin-top:5px;margin-left:20px;" class="fas fa-user-circle"></i>
+      <p class=image-caption >Login/Signup</p></a><span>
+      </div>
+    </header>
+    <div class="divide">
+    </div>
+    <div class="navigation">
+      <span class="open-slide">
+    <a href="#" class=open-btn onclick="openSlideMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+    </a>
+    </span>
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#"><i class="fas fa-home"></i>&nbsp;Home</a>
+      <a href="#"><i class="fas fa-info-circle"></i>&nbsp;About</a>
+      <a href="#"><i class="fas fa-wrench"></i>&nbsp;Services</a>
+      <a href="#"><i class="far fa-envelope"></i>&nbsp;Contact</a>
+
+    </div>
+    <ul class=menu-options>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Great Deals</a></li>
+    </ul>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
+
+<style media="screen">
+*{
+  padding: 0;
+  margin: 0;
+}
+.wrapper{
+  height:1100px;
+}
+body{
+  background: white;
+}
+.thumbs{
+  width: 5%;
+  height: 300px;
+  margin-top: 10px;
+    float: left;
+}
+.thumbs img{
+  width:40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+.thumbs img:hover{
+  box-shadow: 0 0 10px red;
+}
+.main-lightbox{
+  width: 30%;
+  height: 500px;
+  float: left;
+}
+.lightbox img{
+  width:200px;
+  height: 405px;
+}
+.lightbox{
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+
+}
+.lightbox:target{
+  visibility: visible;
+  opacity: 1;
+  transition: 2s;
+}
+#lightbox1 img{
+  height: 370px;
+  width:400px;
+  margin-left: 0px;
+
+}
+#lightbox2 img{
+  height: 350px;
+  width: 380px;
+}
+#lightbox3 img{
+  height: 300px;
+  width: 400px;
+  margin-left: 20px;
+}
+#lightbox4 img{
+  height: 350px;
+  width: 420px;
+}
+#lightbox5 img{
+  height: 350px;
+  width: 420px;
+}
+.description{
+  width: 42%;
+  height: 600px;
+  float:left;
+  margin-left: 40px;
+}
+.buy_add{
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  margin-top:475px;
+  margin-left: 7px;
+}
+.buy{
+  width:240px;
+  height: 55px;
+  background: orange;
+  color:white;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: "Arial";
+  outline: none;
+  font-weight: bold;
+  margin-left: 3px;
+}
+.gap{
+  height: 95px;
+  width: 100%;background: white;
+}
+.adds{
+  float: right;
+  width: 20%;
+  height: 1100px;
+  margin-top: -600px;
+}
+.des-rem{
+  float:left;
+  width: 80%;
+  height: 500px;
+  background: white;
+}
+.ad1{
+  height: 20px;
+  margin-bottom:20px;
+  width: 130px;
+}
+.ad1 p{
+  width: auto;
+  padding:5px;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+.ad2 img{
+  height: 300px;
+  width: 270px;
+  margin-top: -5px;
+}
+.ad3 img{
+  height: 300px;
+  width: 270px;
+  margin-top: -5px;
+}
+.ad4 img{
+  height: 300px;
+  width: 270px;
+}
+.description p{
+  font-size: 14px;
+  padding-top: 5px;
+}
+.description .h2{
+  font-family: "Britannic Bold";
+  width: 550px;
+  font-size:20px;
+  font-weight: normal;
+}
+#pincode:focus{
+  outline: none;
+}
+#des-lists
+{
+  font-size: 15px;
+  margin-left: 50px;
+  margin-top: -3px;
+}
+#des-lists li{
+  padding-top: 10px;
+}
+.product-table{
+  width: 90%;
+  height: 400px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  box-shadow: 0 5px 10px black;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.product-table th{
+  width: 200px;
+  background: lightgrey;
+}
+.product-table td{
+  border-right: 1px solid black;
+}
+.product-table td,th{
+  border-bottom: 1px solid black;
+  padding-left: 20px;
+}
+</style>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="thumbs">
+        <a href=#lightbox1> <img src="product51/first.jpg" alt="first"> </a>
+         <a href=#lightbox2> <img src="product51/second.jpg" alt="second"> </a>
+      <a href=#lightbox3> <img src="product51/third.jpg" alt="third"> </a>
+        <a href=#lightbox4> <img src="product51/fourth.jpg" alt="fourth"> </a>
+        <a href=#lightbox5> <img src="product51/fifth.jpg" alt="fifth"> </a>
+      </div>
+      <p style="font-size:16px;font-weight:bolder;margin:40px 0 0 120px;position:absolute;z-index:1;">Click on the image for fullscreen view</p>
+      <div class="main-lightbox">
+      <div class="lightbox" id=lightbox1>
+        <a href="product51/first.jpg"><div class="gap">
+        </div>  <img src="product51/first.jpg" alt="This is image 1" ></a>
+      </div>
+      <div class="lightbox" id=lightbox2>
+        <a href="product51/second.jpg"> <div class="gap">
+        </div><img src="product51/second.jpg" alt="This is image 2" ></a>
+      </div>
+      <div class="lightbox" id=lightbox3>
+        <a href="product51/third.jpg"><div class="gap">
+        </div>  <img src="product51/third.jpg" alt="This is image 3" ></a>
+      </div>
+      <div class="lightbox" id=lightbox4>
+        <a href="product51/fourth.jpg"> <div class="gap">
+        </div> <img src="product51/fourth.jpg" alt="This is image 4" ></a>
+      </div>
+      <div class="lightbox" id=lightbox5>
+        <a href="product51/fifth.jpg"><div class="gap">
+        </div>
+           <img src="product51/fifth.jpg" alt="This is image 5" ></a>
+      </div>
+      </div>
+
+      <div class="description">
+        <p class=h2 style="font-family:'Britannic Bold';">Adbeni Orange Lipstick 4 Pcs, Lipgloss 1Pc, Kajal 1Pc, Eyeliner 1Pc, Compact 1Pc (Assorted), 18 Color Eyeshadow 1Pc (Pad A)</p>
+        <div class="rating">
+          <a style="font-size:13px;margin-left:30px;">Average user Rating</a> <a href="#" style="font-size:13px;padding:2px;background:green;color:white">
+            3.5<i class="fas fa-star"></i></a>
+        </div>
+        <div style="clear:both;padding-top:5px;width:90%;margin:0px 0px 10px 10px;" class="hr">
+  <hr style="display:block;height:1px;border:none;background:grey;"/ >
+        </div>
+        <div class="price">
+          <p style="color:grey; padding-left:20px;">M.R.P.: <del>₹ 2275.00<del></p>
+            <p style="padding-left:25px;">Price : <span style="color:#BE051B;font-size:18px;">₹ 575.00</span> </p>
+            <p>You save : <span style="color:#BE051B;font-size:14px;">₹ 1730.00 (70%)<br></span>
+              <span style="font-size:12px;padding-left:65px;">Inclusive of all taxes</span></p>
+              <p style="margin-top:20px;">Eligible for <b>Cash on delievery</b></p>
+              <p style="margin-top:10px;">No EMI Available</p>
+              <p style="color:#08B618;font-size:20px;margin-top:5px;">In Stock</p>
+              <p style="margin-top:10px;"><b>Delivery </b><span style="color:blue;"></span>
+             <span style="width:100px;border-bottom:2px solid blue;margin-left:80px;">
+              <input id=pincode style="width:100px;border:none;margin-top:-8px;border-bottom:2px solid blue;padding:10px;font-size:18px;"
+               type=text placeholder=pincode maxlength="6"></span>
+                <a href=# style="font-size:20px;color:white;border-radius:5px;font-weight:bold;background:blue;padding:7px;">Check</a> </p>
+              <p style="margin-top:20px;">Sold by <span style="color:blue;">Appario Retail Private Ltd</span> (4.7 out of 5 | 13,531 ratings) and <span style="color:blue;">Fulfilled by Shopper's Street</span>.</p>
+              <br>
+              <ul id=des-lists>
+                <li>Shades: Multi</li>
+                <li>Quantity:- Eyeshadow:-Makeup Kit, 5-in-1 Compact :- Pressed Powder, Eyeliner:- Liquid, Kajal:-Stick, Lip Balm:- Stick, Lipstick:- Stick</li>
+                <li>Lipstick:- Red, Purple, brown, Pink And Eyeshadow:- Red, Pink, Yallow, Blue, White, Black, Silver, Green, barbie Pink</li>
+                <li>Every effort has been made to ensure that the information on this site is accurate. If you find any error, please report here.</li>
+                <li>Good Choice India provides you 100% genuine & brand new product...</li>
+              </ul>
+
+        </div>
+      </div>
+      <div class="buy_add">
+        <button class=buy type=button name="Buy_Now" style="background:#FA842E;">BUY NOW</button>
+        <button class=buy type=button name="Add_Cart">ADD TO CART</button>
+      </div>
+      <div class="des-rem">
+        <h2>Product Specification</h2>
+        <table class=product-table cellspacing=0px>
+          <tr>
+            <th>Brand</th>
+            <td>Adbeni</td>
+          </tr>
+          <tr>
+            <th>ASIN</th>
+            <td>2574GS434</td>
+          </tr>
+          <tr>
+            <th>Manufacture Date</th>
+            <td>08/09/2018</td>
+          </tr>
+          <tr>
+            <th>Guarantee</th>
+            <td>1 Year</td>
+          </tr>
+          <tr>
+            <th>Site</th>
+            <td>www.adbeni.com</td>
+          </tr>
+        </table>
+      </div>
+      <div class="adds" title="this is an Advertisement By Shopper's Street ">
+        <div class="ad1">
+        <p>  Ads By Google</p>
+        </div>
+        <div class="ad2">
+          <img src="adds-main/ad3.jpg" alt="">
+        </div>
+        <div class="ad3">
+          <img src="adds-main/ad1.jpg" alt="">
+        </div>
+        <div class="ad4">
+          <img src="adds-main/ad5.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="lists">
+        <ul>
+          <li class=mainl><h3>Get to Know us</h3>
+          <ul class="list1">
+            <li>  <a href="#">About us</a> </li>
+            <li>  <a href="#">Press Release</a> </li>
+            <li>  <a href="#">Our Services</a> </li>
+            <li>  <a href="#">NGOs Run By Shopper's Street</a> </li>
+          </ul></li>
+        <li class=mainl>  <h3>Connect with us</h3>
+          <ul class="list2">
+            <li id=facebook>  <a href="https://www.facebook.com/ashutoshsinghai7"><i class="fab fa-facebook-f"> </i>&nbsp; Facebook </a></li>
+            <li id=twitter>  <a href="https://twitter.com/"><i class="fab fa-twitter"></i>&nbsp; twitter</a></li>
+            <li id=insta>  <a href="https://www.instagram.com/ashutosh_singhai"><i class="fab fa-instagram"></i>&nbsp; Instagram </a> </li>
+            <li id=google>  <a href="https://plus.google.com/u/0/101489217324020959317"><i class="fab fa-google-plus-g"></i>&nbsp; Google+</a></li>
+            <li id=youtube>  <a href="https://www.youtube.com/">
+              <i class="fab fa-youtube"></i>&nbsp; Youtube </a></li>
+          </ul>
+        </li>
+        <li class=mainl>
+          <h3>Payment Methods</h3>
+          <ul class="list3">
+            <li>  <a href="#">Credit card &nbsp;<i class="fas fa-credit-card"></i></a> </li>
+            <li>  <a href="#">Debit card &nbsp; <i class="far fa-credit-card"></i></a> </li>
+            <li>  <a href="#">Net Banking</a> </li>
+            <li>  <a href="#">Mobile wallets</a> </li>
+            <li>
+              <ul>
+                <li> <a href="https://www.visa.co.in/pay-with-visa/find-a-card/debit-cards.html"><img src="cards-logo.png" height=30px></a> </li>
+                <li> <a href="https://www.phonepe.com/en/"><img id=phonepe src="phonepe.png" height=30px></a> </li>
+                <li> <a href="https://tez.google.com/"><img id=tez src="tez.png" height=30px></a> </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class=mainl>
+          <h3>Let us help You</h3>
+          <ul class="list4">
+            <li>  <a href="#">Your Account</a> </li>
+            <li>  <a href="#">Return Center</a> </li>
+            <li>  <a href="#">100% guarenteed Returns</a> </li>
+            <li>  <a href="#"><i class="far fa-question-circle"></i>&nbsp;Help</a> </li>
+          </ul>
+        </li>
+</ul>
+      </div>
+      <div style="clear:both;padding-top:40px;width:95%;margin-left:30px;" class="hr">
+<hr style="display:block;height:1px;border:none;background:grey;"/ >
+      </div>
+      <table class=table-last align=center cellspacing=0px cellpadding=15px border=1px>
+        <tr>
+          <td>Track Your Orders <img id=track src="trackers.png" height="50" align=middle></td>
+          <td>Easy and Fast Returns <img id=return src="returns.png" height="50" align=middle></td>
+          <td>Online Cancellations <img id=cancellation src="cancellation.png" height="50" align=middle></td>
+        </tr>
+      </table>
+      <h3 id=partners>Our Business Partners</h3>
+      <div class="partners">
+
+<ul>
+  <li> <a href="https://www.flipkart.com"><img src="partners/flipkart.png"></a> </li>
+  <li> <a href="https://www.amazon.in"><img src="partners/amazon.png"></a> </li>
+  <li> <a href="https://www.hp.com"><img src="partners/hp.jpg"></a> </li>
+  <li> <a href="http://www.spacex.com"><img src="partners/spacex.png"></a> </li>
+  <li> <a href="https://www.microsoft.com"><img src="partners/microsoft.png"></a> </li>
+  <li> <a href="https://www.alibaba.com"><img src="partners/alibaba.jpg"></a> </li>
+  <li> <a href="https://www.paypal.com/us/home"><img src="partners/paypal.png"></a> </li>
+</ul>
+      </div>
+      Copyright &copy; 2018 Shopper's Street All Rights Reserved.
+    </div>
+  </body>
+</html>
